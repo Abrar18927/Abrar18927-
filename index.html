@@ -1,215 +1,145 @@
+
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Da Haya Lopata (DHL) — official party information, leadership, news and events.">
-  <title>IT NISSATA – Information Technology  | Official Website</title>
-  <style>
-    :root { --red:#d62828; --green:#16834a; --blue:#1769aa; --ink:#17212b; --paper:#f5f7fa; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:Tahoma, Arial, sans-serif; background:var(--paper); color:var(--ink); line-height:1.8; }
-    .topbar { height:9px; background:linear-gradient(90deg,var(--red) 0 33.33%,var(--green) 33.33% 66.66%,var(--blue) 66.66%); }
-    header { background:#fff; box-shadow:0 2px 14px #10203012; position:sticky; top:0; z-index:5; }
-    .nav { max-width:1120px; margin:auto; padding:14px 22px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
-    .brand { display:flex; align-items:center; gap:12px; color:var(--ink); text-decoration:none; font-weight:800; }
-    .logo { width:48px; height:48px; border-radius:50%; background:conic-gradient(var(--red) 0 33.33%,var(--green) 33.33% 66.66%,var(--blue) 66.66%); display:grid; place-items:center; color:#fff; border:3px solid #fff; box-shadow:0 0 0 1px #ddd; font-size:13px; direction:ltr; }
-    .brand small { display:block; color:#687582; font-size:12px; font-weight:500; }
-    nav { display:flex; flex-wrap:wrap; gap:16px; }
-    nav a { text-decoration:none; color:#344454; font-size:14px; font-weight:700; }
-    nav a:hover { color:var(--green); }
-    .hero { color:white; background:linear-gradient(125deg,#122438ee,#122438b8), linear-gradient(90deg,var(--red),var(--green),var(--blue)); }
-    .hero-inner { max-width:1120px; margin:auto; padding:86px 24px 78px; display:grid; grid-template-columns:1.4fr .8fr; align-items:center; gap:40px; }
-    .eyebrow { color:#d5f4e2; font-weight:700; letter-spacing:.5px; }
-    h1 { font-size:clamp(34px,5vw,58px); line-height:1.25; margin:12px 0 18px; }
-    .hero p { max-width:650px; font-size:18px; color:#e7eef5; }
-    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
-    .btn { display:inline-block; padding:11px 20px; border-radius:9px; text-decoration:none; font-weight:800; }
-    .btn-primary { background:#fff; color:#14283b; }
-    .btn-outline { color:#fff; border:1px solid #ffffff90; }
-    .flag-card { background:#ffffff12; border:1px solid #ffffff30; padding:25px; border-radius:20px; text-align:center; backdrop-filter:blur(4px); }
-    .flag { display:flex; height:130px; border-radius:12px; overflow:hidden; box-shadow:0 12px 28px #0003; direction:ltr; }
-    .flag span { flex:1; }
-    .flag .r { background:var(--red); } .flag .g { background:var(--green); } .flag .b { background:var(--blue); }
-    .flag-card p { font-size:14px; margin-bottom:0; }
-    section { max-width:1120px; margin:auto; padding:64px 22px; }
-    .section-title { margin:0 0 8px; font-size:32px; }
-    .section-intro { color:#617080; margin:0 0 28px; }
-    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-    .card { background:#fff; padding:25px; border-radius:15px; box-shadow:0 6px 22px #1020300b; border:1px solid #e8edf1; }
-    .card h3 { margin:8px 0 4px; font-size:20px; }
-    .icon { width:46px; height:46px; display:grid; place-items:center; border-radius:12px; background:#e8f5ed; color:var(--green); font-size:22px; }
-    .role { color:var(--green); font-weight:800; margin:0; }
-    .placeholder { border:2px dashed #cdd6df; border-radius:12px; min-height:125px; display:grid; place-items:center; color:#72808c; background:#fafbfd; padding:15px; text-align:center; }
-    .news-card { border-top:4px solid var(--blue); }
-    .news-card:nth-child(2) { border-color:var(--red); } .news-card:nth-child(3) { border-color:var(--green); }
-    .contact { background:#eaf0f5; max-width:none; }
-    .contact-inner { max-width:1120px; margin:auto; padding:0 22px; display:grid; grid-template-columns:1fr 1fr; gap:28px; }
-    .contact-box { background:#fff; border-radius:16px; padding:25px; }
-    .contact-box a { color:var(--blue); }
-    footer { background:#101f2d; color:#d9e2ea; padding:25px 22px; text-align:center; font-size:13px; }
-    footer .mini-flag { display:inline-flex; width:54px; height:7px; direction:ltr; vertical-align:middle; margin:0 7px; }
-    .muted { color:#6b7885; font-size:14px; }
-    @media (max-width:760px) {
-      .nav { align-items:flex-start; flex-direction:column; }
-      nav { gap:10px 14px; }
-      .hero-inner { grid-template-columns:1fr; padding-top:55px; }
-      .flag-card { max-width:420px; }
-      .cards { grid-template-columns:1fr; }
-      .contact-inner { grid-template-columns:1fr; }
-      section { padding:48px 18px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IT NISSATA - Information Technology, computer learning and digital services.">
+<title>IT NISSATA | Information Technology</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#1e293b;line-height:1.7}
+header{background:#102f50;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.brand{font-size:25px;font-weight:bold}
+.brand span{color:#42d6b0}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}
+nav a:hover{color:#42d6b0}
+.hero{background:linear-gradient(130deg,#102f50,#087f8c);color:white;text-align:center;padding:90px 20px}
+.hero h1{font-size:clamp(36px,6vw,58px);margin:0}
+.hero p{font-size:19px;max-width:650px;margin:18px auto}
+.btn{display:inline-block;background:#42d6b0;color:#102f50;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px}
+section{max-width:1100px;margin:auto;padding:55px 22px}
+.heading{text-align:center;font-size:32px;color:#102f50;margin-top:0}
+.intro{text-align:center;color:#64748b;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;padding:25px;border-radius:14px;box-shadow:0 5px 22px #102f5010;border:1px solid #e5edf3}
+.symbol{font-size:34px}
+.card h3{color:#087f8c;margin-bottom:8px}
+.banner{background:#e4f6f3;border-radius:15px;padding:30px;text-align:center}
+.contact{text-align:center;background:#eaf1f7;padding:45px 20px}
+footer{background:#102f50;color:white;text-align:center;padding:25px}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding:65px 18px}}
+</style>
 </head>
 <body>
-<div class="topbar"></div>
+
 <header>
-  <div class="nav">
-    <a class="brand" href="#home" aria-label="Da Haya Lopata home">
-      <span class="logo">DHL</span>
-      <span>Da Haya Lopata <small>ڈی ایچ ایل — پارٹی ویب سائٹ</small></span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#home">ہوم</a>
-      <a href="#about">تعارف</a>
-      <a href="#leadership">قیادت</a>
-      <a href="#news">خبریں</a>
-      <a href="#events">تقریبات</a>
-      <a href="#contact">رابطہ</a>
-    </nav>
-  </div>
+  <div class="brand">IT <span>NISSATA</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#learning">Learning</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
   <div class="hero" id="home">
-    <div class="hero-inner">
-      <div>
-        <div class="eyebrow">سرکاری پارٹی ویب سائٹ</div>
-        <h1>Da Haya Lopata<br><span style="color:#a8e6bf;">(DHL)</span></h1>
-        <p>خوش آمدید! یہ Da Haya Lopata پارٹی کا تعارفی صفحہ ہے۔ یہاں پارٹی کی قیادت، اعلانات، سرگرمیوں اور تقریبات کی معلومات شائع کی جا سکتی ہیں۔</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#about">پارٹی کے بارے میں</a>
-          <a class="btn btn-outline" href="#contact">رابطہ کریں</a>
-        </div>
-      </div>
-      <div class="flag-card">
-        <div class="flag" role="img" aria-label="Red green and blue party flag"><span class="r"></span><span class="g"></span><span class="b"></span></div>
-        <h3>پارٹی پرچم</h3>
-        <p>سرخ • سبز • نیلا</p>
-      </div>
-    </div>
+    <h1>Welcome to IT NISSATA</h1>
+    <p>Information Technology, Computer Education and Digital Skills for Everyone.</p>
+    <a class="btn" href="#services">Explore Our Services</a>
   </div>
 
   <section id="about">
-    <h2 class="section-title">پارٹی کا تعارف</h2>
-    <p class="section-intro">Da Haya Lopata (DHL) کے بارے میں معلومات یہاں شامل کریں۔</p>
-    <div class="card">
-      <p>Da Haya Lopata کی ویب سائٹ میں خوش آمدیدی پیغام، پارٹی کے مقاصد، منشور اور عوامی سرگرمیوں کی معلومات شامل کی جا سکتی ہیں۔ یہ ایک ابتدائی ٹیمپلیٹ ہے؛ اپنی تصدیق شدہ معلومات شامل کر کے اسے مکمل کریں۔</p>
-      <p class="muted">نوٹ: یہ ویب سائٹ ایک غیر سرکاری طور پر تیار کردہ ٹیمپلیٹ ہے۔ اسے سرکاری یا رجسٹرڈ پارٹی ویب سائٹ ظاہر کرنے سے پہلے ضروری تصدیق کریں۔</p>
+    <h2 class="heading">About IT NISSATA</h2>
+    <p class="intro">Technology and learning for a digital future.</p>
+    <div class="banner">
+      <h3>Learn. Create. Grow.</h3>
+      <p>IT NISSATA is a technology-focused website for computer education, digital skills and useful information about modern technology.</p>
     </div>
   </section>
 
-  <section id="leadership">
-    <h2 class="section-title">پارٹی قیادت</h2>
-    <p class="section-intro">پارٹی کے رہنماؤں کا تعارف</p>
-    <div class="cards">
-      <article class="card">
-        <div class="icon">★</div>
-        <h3>Khairul Abrar</h3>
-        <p class="role">چیئرمین</p>
-        <p class="muted">یہاں چیئرمین کا تعارف اور تصویر شامل کریں۔</p>
-        <img src="chairman.jpg" alt="Chairman Khairul Abrar" style="width:250px; max-width:90%; border-radius:10px;">
-      </article>
-      <article class="card">
-        <div class="icon">◆</div>
-        <h3>Talha Rahaman</h3>
-        <p class="role">جنرل سیکریٹری</p>
-        <p class="muted">یہاں جنرل سیکریٹری کا تعارف اور تصویر شامل کریں۔</p>
-        <div class="placeholder">جنرل سیکریٹری کی تصویر یہاں شامل کریں</div>
-      </article>
-      <article class="card">
-        <div class="icon">✦</div>
-        <h3>پارٹی ٹیم</h3>
-        <p class="role">تنظیمی قیادت</p>
-        <p class="muted">ضرورت کے مطابق دیگر عہدیداروں کی معلومات شامل کریں۔</p>
-        <div class="placeholder">ٹیم کی تصویر یہاں شامل کریں</div>
-      </article>
-    </div>
-  </section>
-
-  <section id="news">
-    <h2 class="section-title">خبریں اور اعلانات</h2>
-    <p class="section-intro">تازہ ترین اور تصدیق شدہ معلومات یہاں شائع کریں۔</p>
-    <div class="cards">
-      <article class="card news-card"><h3>پارٹی کا اعلان</h3><p>اپنا اعلان یہاں لکھیں۔ شائع کرنے سے پہلے تاریخ اور تفصیلات کی تصدیق کریں۔</p><p class="muted">تاریخ: شامل کریں</p></article>
-      <article class="card news-card"><h3>پارٹی سرگرمیاں</h3><p>اجلاس، عوامی ملاقات یا دوسری سرگرمیوں کی معلومات یہاں شامل کریں۔</p><p class="muted">تاریخ: شامل کریں</p></article>
-      <article class="card news-card"><h3>اہم اطلاع</h3><p>پارٹی سے متعلق اہم اور درست معلومات یہاں شائع کریں۔</p><p class="muted">تاریخ: شامل کریں</p></article>
-    </div>
-  </section>
-
-  <section id="events">
-    <h2 class="section-title">تقریبات اور تصاویر</h2>
-    <p class="section-intro">جلسوں، اجلاسوں اور دیگر تقریبات کی اپنی تصاویر شامل کریں۔</p>
-    <div class="cards">
-      <div class="placeholder">تقریب کی تصویر 1</div>
-      <div class="placeholder">تقریب کی تصویر 2</div>
-      <div class="placeholder">تقریب کی تصویر 3</div>
-    </div>
-  </section>
-
-  <div class="contact" id="contact">
-    <div class="contact-inner" style="padding-top:58px;padding-bottom:58px;">
-      <div>
-        <h2 class="section-title">رابطہ کریں</h2>
-        <p>پارٹی کے رابطے کی معلومات یہاں شامل کریں تاکہ لوگ آپ سے رابطہ کر سکیں۔</p>
-        <p class="muted">براہ کرم عوامی ویب سائٹ پر اپنا ذاتی فون نمبر یا ای میل شامل کرنے سے پہلے غور کریں۔</p>
+  <section id="services">
+    <h2 class="heading">Our Services</h2>
+    <p class="intro">Explore technology topics and learning resources.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="symbol">💻</div>
+        <h3>Computer Skills</h3>
+        <p>Learn computer basics, Windows, files, typing and everyday computer tasks.</p>
       </div>
-      <div class="contact-box">
-        <h3>رابطے کی تفصیلات</h3>
-        <p><strong>پارٹی:</strong> Da Haya Lopata (DHL)</p>
-        <p><strong>علاقہ:</strong> یہاں شہر یا دفتر کا پتہ شامل کریں</p>
-        <p><strong>ای میل:</strong> <span class="muted">یہاں عوامی ای میل شامل کریں</span></p>
-        <p><strong>سوشل میڈیا:</strong> <span class="muted">اپنے آفیشل صفحات کے لنکس شامل کریں</span></p>
+      <div class="card">
+        <div class="symbol">🌐</div>
+        <h3>Web Design</h3>
+        <p>Discover HTML, CSS and the basics of building websites.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🎨</div>
+        <h3>Graphic Design</h3>
+        <p>Explore design concepts, graphics software and creative digital work.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">⚙️</div>
+        <h3>IT & Technology</h3>
+        <p>Learn about computers, software, hardware and useful digital tools.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🔌</div>
+        <h3>Electrical Technology</h3>
+        <p>Explore electrical concepts, diagrams and automation learning resources.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">📚</div>
+        <h3>Learning Resources</h3>
+        <p>Find helpful tutorials and guides for developing new skills.</p>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="learning">
+    <h2 class="heading">Start Learning</h2>
+    <p class="intro">Choose a subject and build your skills step by step.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Computer Basics</h3>
+        <p>Start with computer fundamentals and basic software.</p>
+      </div>
+      <div class="card">
+        <h3>HTML & CSS</h3>
+        <p>Learn how web pages are structured and styled.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Skills</h3>
+        <p>Improve your digital knowledge for study and work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="banner">
+      <h2>Technology for Everyone</h2>
+      <p>Keep learning, practise regularly and develop your digital skills.</p>
+      <a class="btn" href="#contact">Contact Us</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact IT NISSATA</h2>
+    <p>Location: Nissata, Charsadda, Khyber Pakhtunkhwa, Pakistan</p>
+    <p>For enquiries, please add your public email address here.</p>
+  </section>
 </main>
 
 <footer>
-  <span class="mini-flag"><i style="background:#d62828;flex:1"></i><i style="background:#16834a;flex:1"></i><i style="background:#1769aa;flex:1"></i></span>
-  © <span id="year"></span> Da Haya Lopata (DHL). تمام حقوق محفوظ ہیں۔
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <p>© <span id="year"></span> IT NISSATA - Information Technology</p>
+  <p>Learn • Create • Grow</p>
 </footer>
-  </footer>
-<div style="text-align:center; padding:20px;">
-  <h2>Chairman Khairul Abrar</h2>
-  <img src="chairman.jpg"
-       alt="Chairman Khairul Abrar"
-       style="width:250px; max-width:90%; border-radius:10px;">
-</div>
 
-<section id="contact" style="padding:30px 15px; text-align:center;">
-  <h2>رابطہ کریں | Contact Us</h2>
-
-  <p><strong>Party Name:</strong> Da Haya Lopata (DHL)</p>
-  <p><strong>Chairman:</strong> Khairul Abrar</p>
-
-  <p><strong>Contact Number:</strong></p>
-  <p>
-    <a href="tel:+923366976462">+92 336 6976462</a>
-  </p>
-
-  <p><strong>Party Address:</strong></p>
-  <p>Nissata, Charsadda, Khyber Pakhtunkhwa, Pakistan</p>
-
-  <a href="https://wa.me/923366976462"
-     target="_blank"
-     rel="noopener"
-     style="display:inline-block; background:#25D366; color:white; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:bold;">
-    WhatsApp par rabta karein
-  </a>
-</section>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
-
